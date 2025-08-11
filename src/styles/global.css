@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --content-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+    --background-color: #14151D;
+    --background-primary: #151515;
+    --background-secondary: #1E1E1E;
+    --background-tertiary: #23242C;
+    --background-brand: #9282FA;
+    --background-highlights: #BDB4FA;
+
+    --border-primary: #3E3C41;
+    --border-secondary: #86818C;
+    --border-brand: #9282FA;
+    --border-divisor: #353339;
+
+    --accent-blue: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #F09102;
+    --accent-orange-light: #75501B;
+
+    --ff-sans: "Inter", sans-serif;
+    --ff-title: "Inter Tight", sans-serif;
+
+    --fw-md: 500;
+    --fw-bd: 700;
+
+    --fs-legend: 1.5rem;
+    --fs-par-lb-md: .875rem;
+    --fs-par-lb-sm: .75rem;
+    --fs-lb-lg: 1rem;
+    --fs-link: .75rem;
+}
+
+body {
+    background-color: var(--background-color);
+    
+}
+
+html {
+    color: var(--content-primary);
+    font-family: var(--ff-sans);
+    font-size: var(--fs-par-lb-sm);
+    font-weight: var(--fw-md);
+}
+
+legend {
+    font-size: var(--fs-legend);
+    font-weight: var(--fw-bd);
+}
+
+ul[role="list"] {
+    list-style: none;
+}
