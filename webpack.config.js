@@ -22,7 +22,7 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, "index.html"),
-            //favicon
+            favicon: path.resolve("src", "assets", "logo.svg")
         }),
         new CopyWebpackPlugin({
             patterns: [

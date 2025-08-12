@@ -1,0 +1,17 @@
+header#logo {
+    & div {
+        background-color: var(--background-logo);
+        gap: .125rem;
+        width: 9.5625rem;
+        border-radius: 0rem 0rem .5rem 0rem;
+        padding: .75rem 1.25rem;
+
+        & span {
+            color: var(--content-brand);
+            font-family: var(--ff-grotesk);
+            line-height: 1.5rem;
+            font-weight: var(--fw-bd);
+            font-size: 1rem;
+        }
+    }
+}
