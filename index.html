@@ -19,17 +19,75 @@
         </div>
     </header>
     <main>
-        <section id="shop-schedules">
-            <header id="main">
-                <div id="my-schedule">
-                    <h2>Sua Agenda</h2>
-                    <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
-                </div>
-                <div class="input-date">
-                    <img src="./src/assets/Moon Stars.svg" alt="">
-                </div>
-            </header>
-        </section>
+        <header id="main" class="flex align-items-center justify-content-center">
+            <div id="my-schedule">
+                <h2>Sua Agenda</h2>
+                <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+            </div>
+            <div class="input-date flex justify-content-center">
+                <img src="./src/assets/Calendar.svg" alt="Calendar">
+                <input type="date" id="date" name="date" required>
+            </div>
+        </header>
+        <div id="schedules">
+            <section id="schedule-morning" class="shop-schedules">
+                <header class="schedule-header">
+                    <div>
+                        <img src="./src/assets/Sun-Fog.svg" alt="Sun with fog">
+                        <h4>Manhã</h4>
+                    </div>
+                    <span>09h-12h</span>
+                </header>
+                <ul id="list-schedules-morning" role="list">
+                    <li class="item-schedule">
+                        <div>
+                            <span>09:00</span>
+                            <p><span>Thor</span>/Fernanda Costa</p>
+                        </div>
+                        <p>Vacinação</p>
+                        <p id="remove-schedule">Remover agendamento</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="schedule-afternoon" class="shop-schedules">
+                <header class="schedule-header">
+                    <div>
+                        <img src="./src/assets/Cloud-Sun.svg" alt="Cloud sun">
+                        <h4>Tarde</h4>
+                    </div>
+                    <span>13h-18h</span>
+                </header>
+                <ul id="list-schedules-afternoon" role="list">
+                    <li class="item-schedule">
+                        <div>
+                            <span>13:00</span>
+                            <p><span>Mel</span>/João Souza</p>
+                        </div>
+                        <p>Corte de Unhas</p>
+                        <p id="remove-schedule">Remover agendamento</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="schedule-night" class="shop-schedules">
+                <header class="schedule-header">
+                    <div>
+                        <img src="./src/assets/Moon Stars.svg" alt="Moon with stars">
+                        <h4>Noite</h4>
+                    </div>
+                    <span>19h-21h</span>
+                </header>
+                <ul id="list-schedules-night" role="list">
+                    <li class="item-schedule">
+                        <div>
+                            <span>20:00</span>
+                            <p><span>Cacau Cisne</span>/Smith Cisne</p>
+                        </div>
+                        <p>Limpeza de Dentes</p>
+                        <p id="remove-schedule">Remover agendamento</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 </body>
 </html>

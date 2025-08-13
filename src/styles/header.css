@@ -1,4 +1,4 @@
-header#logo {
+#logo {
     & div {
         background-color: var(--background-logo);
         gap: .125rem;
@@ -13,5 +13,22 @@ header#logo {
             font-weight: var(--fw-bd);
             font-size: 1rem;
         }
+    }
+}
+
+#main {
+    gap: 4.5rem;
+    margin-top: .875rem;
+    margin-bottom: 2rem;
+    & h2 {
+        font-size: var(--fs-legend);
+        font-family: var(--ff-title);
+        font-weight: var(--fw-bd);
+        line-height: 2rem;
+    }
+
+    & p {
+        font-size: var(--fs-par-lb-md);
+        color: var(--content-secondary);
     }
 }
