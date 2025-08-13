@@ -19,8 +19,8 @@
         display: flex;
         justify-content: space-between;
         font-size: var(--fs-par-lb-sm);
-        padding-block: 1rem;
-        
+        padding: 1rem .75rem;
+
         & span {
             color: var(--content-primary);
             font-weight: var(--fw-bd);
@@ -70,4 +70,8 @@
         }
 
     }
+}
+
+.separator-line {
+    border-bottom: 1px solid rgb(58, 57, 57);
 }

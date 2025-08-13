@@ -12,14 +12,9 @@
     font-family: var(--ff-title);
 
     transition: background-color 100ms linear;
-    filter: blur();
     box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
 
     &:hover {
         background-color: #BDB4FA;
     }
-
-    /* Button */
-
-
 }
