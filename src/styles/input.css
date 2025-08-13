@@ -1,0 +1,21 @@
+.input-date {
+    color: var(--content-secondary);
+    font-weight: 400;
+    gap: .25rem;
+    border: 1px solid var(--border-primary);
+    padding: 0.79rem 0.79rem 1rem 0.79rem;
+    border-radius: .5rem;
+
+    & input {
+        all: unset;
+        width: 8rem;
+
+        &::-webkit-calendar-picker-indicator {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../assets/arrow.svg");
+            background-size: 1.25rem;
+        }
+    }
+
+}

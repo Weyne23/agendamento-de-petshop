@@ -1,0 +1,11 @@
+main {
+    justify-self: center;
+    max-width: 44.44rem;
+    margin-inline: 1.5rem;
+
+    & .input {
+        position: fixed;
+        right: 3%;
+        bottom: 5%;
+    }
+}

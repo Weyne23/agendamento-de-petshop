@@ -1,15 +1,12 @@
 #schedules{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
     gap: .75rem;
-    max-width: 44.44rem;
+    width: 100%;
+    margin-bottom: 3.875rem;
     
-    /* & .shop-schedules {
-        display: flex;
-        } */
     & .shop-schedules{
+        display: block;
         border-radius: .5rem;
         background-color: var(--background-tertiary);
 
@@ -22,15 +19,36 @@
         display: flex;
         justify-content: space-between;
         font-size: var(--fs-par-lb-sm);
+        padding-block: 1rem;
         
+        & span {
+            color: var(--content-primary);
+            font-weight: var(--fw-bd);
+        }
+
         & p {
             text-align: left;
             color: var(--content-tertiary);
+
+            & span {
+                color: var(--content-primary);
+                font-weight: var(--fw-bd);
+            }
         }
 
         & div {
             display: flex;
             gap: 1rem;
+        }
+
+        & #remove-schedule {
+            cursor: pointer;
+            transition: color 100ms linear;
+
+            &:hover {
+                color: var(--content-primary);
+                text-decoration: underline solid;
+            }
         }
     }
 
@@ -38,7 +56,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 44.44rem;
         padding: .75rem 1.25rem;
         border-bottom: 1px solid rgb(58, 57, 57);
 
