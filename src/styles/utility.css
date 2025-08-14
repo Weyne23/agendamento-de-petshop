@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+.justify-content-between {
+    justify-content: space-around;
+}
+
 .blur {
     filter: blur(5px);
 }

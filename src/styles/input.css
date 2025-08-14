@@ -5,22 +5,29 @@
     border: 1px solid var(--border-primary);
     padding: 0.79rem 0.79rem 1rem 0.79rem;
     border-radius: .5rem;
-
+    
     &:hover {
         border-color: var(--border-secondary);
     }
 
-    
+    &:focus-within {
+        border-color: var(--border-brand);
+    }
+
     & input,
     & textarea,
     & select {
         all: unset;
         width: 100%;
+        background-size: 1.25rem;
         
         &:focus {
             border-color: var(--border-brand);
         }
+    }
 
+    & select {
+        background: no-repeat right url("../assets/arrow.svg");
     }
     
     & input[type="date"]{
@@ -28,9 +35,7 @@
     
         &::-webkit-calendar-picker-indicator {
             cursor: pointer;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url("../assets/arrow.svg");
+            background: no-repeat right url("../assets/arrow.svg");
             background-size: 1.25rem;
         }
     }
