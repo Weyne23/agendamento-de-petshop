@@ -1,0 +1,19 @@
+form {
+    padding: 2.5rem;
+    background-color: var(--background-tertiary);
+    max-width: 29.6rem;
+    border-radius: .75rem;
+
+    & label {
+        display: block;
+        line-height: 1.5rem;
+        margin-block: 1rem .25rem;
+        font-size: var(--fs-par-lb-md);
+    }
+}
+
+.input-button-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.75rem;
+}

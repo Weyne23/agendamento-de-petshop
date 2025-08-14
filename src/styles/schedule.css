@@ -16,8 +16,8 @@
     }
 
     & .item-schedule{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr .85fr .5fr;
         font-size: var(--fs-par-lb-sm);
         padding: 1rem .75rem;
 
@@ -44,6 +44,7 @@
         & #remove-schedule {
             cursor: pointer;
             transition: color 100ms linear;
+            text-align: right;
 
             &:hover {
                 color: var(--content-primary);
@@ -74,4 +75,20 @@
 
 .separator-line {
     border-bottom: 1px solid rgb(58, 57, 57);
+}
+
+.my-schedule {
+    & .legend {
+        font-size: var(--fs-legend);
+        font-family: var(--ff-title);
+        font-weight: var(--fw-bd);
+        line-height: 2rem;
+        margin-bottom: .25rem;
+    }
+    
+    & p {
+        font-size: var(--fs-par-lb-md);
+        font-weight: 400;
+        color: var(--content-secondary);
+    }
 }

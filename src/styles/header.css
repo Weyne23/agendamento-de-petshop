@@ -17,18 +17,7 @@
 }
 
 #main-header {
-    gap: 4.5rem;
+    gap: 5rem;
     margin-top: .875rem;
     margin-bottom: 2rem;
-    & h2 {
-        font-size: var(--fs-legend);
-        font-family: var(--ff-title);
-        font-weight: var(--fw-bd);
-        line-height: 2rem;
-    }
-
-    & p {
-        font-size: var(--fs-par-lb-md);
-        color: var(--content-secondary);
-    }
 }

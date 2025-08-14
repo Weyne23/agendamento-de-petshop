@@ -1,9 +1,9 @@
 main {
     justify-self: center;
-    max-width: 44.44rem;
+    max-width: 46rem;
     margin-inline: 1.5rem;
 
-    & .input {
+    & .input-button {
         position: fixed;
         right: 3%;
         bottom: 5%;
