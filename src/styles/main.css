@@ -9,3 +9,7 @@ main {
         bottom: 5%;
     }
 }
+
+#app {
+    transition: filter 200ms linear;
+}

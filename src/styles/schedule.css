@@ -92,3 +92,10 @@
         color: var(--content-secondary);
     }
 }
+
+#new-schedule {
+    position: fixed;
+    justify-self: center;
+    bottom: 12%;
+    transition: opacity 200ms linear;
+}

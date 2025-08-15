@@ -12,6 +12,7 @@
 
     &:focus-within {
         border-color: var(--border-brand);
+        color: var(--content-primary);
     }
 
     & input,
@@ -31,8 +32,6 @@
     }
     
     & input[type="date"]{
-        width: 8rem;
-    
         &::-webkit-calendar-picker-indicator {
             cursor: pointer;
             background: no-repeat right url("../assets/arrow.svg");

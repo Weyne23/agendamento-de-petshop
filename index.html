@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
     <header id="logo">
@@ -101,7 +99,7 @@
                 </section>
             </div>
         </section>
-        <section id="new-schedule" class="opacity-">
+        <section id="new-schedule" class="display-none opacity-0">
             <form class="form">
                 <div class="my-schedule">
                     <legend class="legend">Agende um atendimento</legend>
@@ -136,7 +134,7 @@
                     </div>
                     <div class="input-wrapper">
                         <label for="service">Hora</label>
-                        <div class="input flex justify-content-between">
+                        <div class="input flex">
                             <img src="./src/assets/Clock.svg" alt="Clock">
                             <select id="hour-schedule" name="hour-schedule" required>
                                 <option value="12:00">12:00</option>
@@ -145,12 +143,12 @@
                     </div>
                 </div>
                 <div class="input-button-submit">
-                    <button type="submit" class="button-style">AGENDAR</button>
+                    <button id="bt-create-schedule" type="submit" class="button-style">AGENDAR</button>
                 </div>
             </form>
         </section>
         <div class="input-button">
-            <button class="button-style">NOVO AGENDAMENTO</button>
+            <button id="bt-new-schedule" class="button-style">NOVO AGENDAMENTO</button>
         </div>
     </main>
 </body>
