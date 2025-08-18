@@ -1,15 +1,17 @@
 {
-    
   "schedules": [
     {
-      "id": "1752446830614",
-      "name": "Weyne Siqueira",
-      "when": "2025-07-14T17:00:00.000Z"
+      "cd_id": "1752446830614",
+      "ch_name_tutor": "Weyne Siqueira",
+      "ch_name_pet": "Linda",
+      "ch_service": "Exorcismo",
+      "dt_schedule": "2025-08-18T17:00:00.000Z"
     },
     {
-      "id": "1752446974289",
-      "name": "Wagner",
-      "when": "2025-07-14T18:00:00.000Z"
+      "cd_id": "1752446974289",
+      "ch_name_tutor": "Samih Freire",
+      "ch_name_pet": "Tosa",
+      "dt_schedule": "2025-08-18T18:00:00.000Z"
     }
   ]
 }

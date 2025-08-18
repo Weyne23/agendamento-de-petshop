@@ -29,6 +29,10 @@
 
     & select {
         background: no-repeat right url("../assets/arrow.svg");
+
+        & option {
+            color: var(--background-color);
+        }
     }
     
     & input[type="date"]{
