@@ -15,7 +15,7 @@ form.onsubmit = async (event) => {
     event.preventDefault();
 
     try {
-        if(validationFilds()){
+        if(validationFields()){
             const [hour] = hourSchedule.children[hourSchedule.selectedIndex].textContent.split(":");
             const date = dayjs(dateSchedule.value).add(hour, "hour");
 
@@ -32,13 +32,17 @@ form.onsubmit = async (event) => {
             alert("Agendamento criado com sucesso!");
             clearFieldsForm();
             loadSchedules();
-            loadHours();
+            loadHours(dateSchedule.value);
         }
     }
     catch (error) {
         alert(error);
     }
 }
+
+phone.addEventListener("keypress", (event) => {
+    mask(event.target);
+})
 
 function clearFieldsForm() {
     tutorName.value = "";
@@ -47,7 +51,7 @@ function clearFieldsForm() {
     service.value = "";
 }
 
-function validationFilds() {
+function validationFields() {
     let msgError = "";
 
     if(!tutorName.value.trim()){
@@ -70,4 +74,28 @@ function validationFilds() {
         alert(msgError);
 
     return !msgError;
+}
+
+function mask(o) {
+  setTimeout(function() {
+    var v = mPhone(o.value);
+    if (v != o.value) {
+      o.value = v;
+    }
+  }, 1);
+}
+
+function mPhone(v) {
+  var r = v.replace(/\D/g, "");
+  r = r.replace(/^0/, "");
+  if (r.length > 10) {
+    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+  } else if (r.length > 5) {
+    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+  } else if (r.length > 2) {
+    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+  } else {
+    r = r.replace(/^(\d*)/, "($1");
+  }
+  return r;
 }

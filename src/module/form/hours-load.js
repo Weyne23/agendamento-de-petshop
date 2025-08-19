@@ -22,9 +22,12 @@ export async function loadHours(date) {
         return !listInvalidDates.includes(hour) && dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
     });
 
-    availableHours.forEach((hour) => {
-        createElementOptionHour(hour);
-    });
+    if(availableHours.length == 0)
+        alert("Esse dia não possui mais nenhum horário disponível para agendamento.");
+    else
+        availableHours.forEach((hour) => {
+            createElementOptionHour(hour);
+        });
 }
 
 function createElementOptionHour(hour) {
