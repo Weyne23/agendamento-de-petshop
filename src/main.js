@@ -4,6 +4,8 @@ import "./libs/dayjs.js"
 
 //JS
 import "./module/form/show-form.js"
+import "./module/form/date-form-change.js"
+import "./module/form/submit.js"
 import "./module/schedule/load.js"
 import "./module/schedule/date-schedule-change.js"
 import "./module/page-load.js"

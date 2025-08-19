@@ -1,18 +1,30 @@
 import dayjs from "dayjs"
 import { openingHours } from "../../utils/opening-hours.js"
+import { getSchedulesByDay } from "../../services/get-schedules.js"
+
 const selectionHours = document.getElementById("hour-schedule");
 const inputDateForm = document.getElementById("date-schedule");
 
-export function loadHours(date) {
+export async function loadHours(date) {
     selectionHours.innerHTML = "";
-    const availableHours = openingHours;
-    availableHours.forEach((hour) => {
-        createElementOptionHour(hour);
-    });
-
     const dateInput = dayjs(date).isBefore(dayjs()) ? dayjs(new Date()) : dayjs(date);
     
     inputDateForm.value = dateInput.format("YYYY-MM-DD");
+    
+    const listSchedulesDay = await getSchedulesByDay(date);
+
+    const listInvalidDates = listSchedulesDay.map(({dt_schedule}) =>
+        dayjs(dt_schedule).format("HH:mm")
+    );
+
+    const availableHours = openingHours.filter((hour) => {
+        const [scheduleHour] = hour.split(":");
+        return !listInvalidDates.includes(hour) && dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
+    });
+
+    availableHours.forEach((hour) => {
+        createElementOptionHour(hour);
+    });
 }
 
 function createElementOptionHour(hour) {

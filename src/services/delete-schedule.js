@@ -7,6 +7,6 @@ export async function deleteSchedule(id) {
         });
     }
     catch(error){
-        return error
+        throw new Error("Erro ao deletar agendamento! Tente novamente!");
     }
 }
