@@ -1,4 +1,5 @@
 form {
+    position: relative;
     padding: 2.5rem;
     background-color: var(--background-tertiary);
     max-width: 29.6rem;
@@ -10,10 +11,23 @@ form {
         margin-block: 1rem .25rem;
         font-size: var(--fs-par-lb-md);
     }
+
+    & #close-form {
+        display: none;
+        position: absolute;
+        top: 2%;
+        right: 3.5%;
+    }
 }
 
 .input-button-submit {
     display: flex;
     justify-content: flex-end;
     margin-top: 1.75rem;
+}
+
+@media(width < 45em) {
+    #close-form {
+        background-color: aqua;
+    }
 }

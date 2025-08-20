@@ -11,7 +11,7 @@ export async function loadHours(date) {
     
     inputDateForm.value = dateInput.format("YYYY-MM-DD");
     
-    const listSchedulesDay = await getSchedulesByDay(date);
+    const listSchedulesDay = await getSchedulesByDay(dateInput);
 
     const listInvalidDates = listSchedulesDay.map(({dt_schedule}) =>
         dayjs(dt_schedule).format("HH:mm")
@@ -19,7 +19,7 @@ export async function loadHours(date) {
 
     const availableHours = openingHours.filter((hour) => {
         const [scheduleHour] = hour.split(":");
-        return !listInvalidDates.includes(hour) && dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
+        return !listInvalidDates.includes(hour) && dayjs(dateInput).add(scheduleHour, "hour").isAfter(dayjs())
     });
 
     if(availableHours.length == 0)
