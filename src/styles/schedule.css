@@ -97,7 +97,7 @@
     position: fixed;
     justify-self: center;
     margin-inline: .5rem;
-    bottom: 12%;
+    bottom: 5%;
     transition: opacity 200ms linear;
 }
 

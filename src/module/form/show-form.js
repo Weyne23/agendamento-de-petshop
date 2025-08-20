@@ -3,6 +3,7 @@ import { loadHours } from "./hours-load.js";
 const btNewSchedule = document.getElementById("bt-new-schedule");
 const sectionForm = document.getElementById("new-schedule");
 const sectionMain = document.getElementById("app");
+const buttonCloseForm = document.getElementById("close-form");
 const body = document.querySelector("body");
 const inputDateListSchedules = document.getElementById("date");
 
@@ -10,6 +11,10 @@ btNewSchedule.addEventListener("click", () => {
     alterShowForm();
     loadHours(inputDateListSchedules.value);
 });
+
+buttonCloseForm.addEventListener("click", () => {
+    alterShowForm();
+})
 
 body.addEventListener("click", (event) => {
     if(event.target != btNewSchedule &&

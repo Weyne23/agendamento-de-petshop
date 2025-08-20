@@ -487,7 +487,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"e1d5ba006ded679673fb.svg\";\n\n//# sourceURL=webpack://Mundo_Pet/./src/assets/arrow.svg?");
+eval("module.exports = __webpack_require__.p + \"e8cc50de7a378354b837.svg\";\n\n//# sourceURL=webpack://Mundo_Pet/./src/assets/arrow.svg?");
 
 /***/ })
 

@@ -17,6 +17,10 @@ form {
         position: absolute;
         top: 2%;
         right: 3.5%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -27,7 +31,9 @@ form {
 }
 
 @media(width < 45em) {
-    #close-form {
-        background-color: aqua;
+    form {
+        & #close-form {
+            display: inherit;
+        }
     }
 }
