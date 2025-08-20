@@ -96,6 +96,25 @@
 #new-schedule {
     position: fixed;
     justify-self: center;
+    margin-inline: .5rem;
     bottom: 12%;
     transition: opacity 200ms linear;
+}
+
+@media(width < 45em) {
+    #schedules {
+        & .item-schedule {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+
+    #new-schedule {
+        position: fixed;
+        justify-self: center;
+        align-self: center;
+        margin-top: 4.75rem;
+        bottom: 3%;
+        transition: opacity 200ms linear;
+    }
 }

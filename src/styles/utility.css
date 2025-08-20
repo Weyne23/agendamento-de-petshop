@@ -37,3 +37,11 @@
 .display-none {
     display: none;
 }
+
+@media(width < 45em) {
+    .grid-columns-2 {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+    }
+}

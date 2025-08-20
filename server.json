@@ -13,7 +13,7 @@
       "ch_name_tutor": "Weyne Siqueira",
       "ch_name_pet": "Linda",
       "ch_telefone": "88999999999",
-      "ch_service": "Exorcismo",
+      "ch_service": "Tosa",
       "dt_schedule": "2025-08-18T20:00:00.000Z"
     },
     {
@@ -21,7 +21,7 @@
       "ch_name_tutor": "Thahlihthah",
       "ch_name_pet": "Dipper",
       "ch_telefone": "88999999999",
-      "ch_service": "Bariátrica",
+      "ch_service": "Banho e Tosa",
       "dt_schedule": "2025-08-18T23:00:00.000Z"
     },
     {
@@ -127,6 +127,14 @@
       "ch_name_pet": "asdasd",
       "ch_phone": "(88) 99965-8877",
       "ch_service": "Banho com tosa com spa com coisa com mais coisa e tudo que poder Banho com tosa com spa com coisa com mais coisa e tudo que poder Banho com tosa com spa com coisa com mais coisa e tudo que poder Banho com tosa com spa com coisa com mais coisa e tudo que poder"
+    },
+    {
+      "id": "1755642028559",
+      "dt_schedule": "2025-08-20T16:00:00.000Z",
+      "ch_name_tutor": "magno",
+      "ch_name_pet": "chocolate",
+      "ch_phone": "(88) 77777-7777",
+      "ch_service": "PAPAPA PAPAPA PAPAPAPAPA"
     }
   ]
 }
